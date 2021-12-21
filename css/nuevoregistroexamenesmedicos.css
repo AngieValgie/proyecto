@@ -1,0 +1,159 @@
+:root {
+    --gris-claro: #eeeeee;
+    --gris-oscuro: #3b4042;
+    --blanco: #FFFFFF;
+    --negro: #111111;
+    --azul: #2F495B;
+    --azul-2: #35566d;
+    --azul-claro: #C8D3D5;
+    --azul-cielo: #0B5ED8;
+}
+
+.contenedor{
+    background-size: cover;
+    background-position: 0px 30%;
+    background-repeat: no-repeat;
+    background-image: url("../img/imgg.jpg");
+    height: 165px;
+}
+
+/* achiqué el logo, le quité el borde, le puse margenes arriba y abajo  */
+.logo{
+    width: 180px;
+    border: none;
+    margin-left: 10%;
+}
+
+/* contenedro del boton de cerrar sesión*/
+.contboton{
+    margin-top: 20px;
+    margin-right: 10%;
+}
+
+/* cambié el color y le quité el borde al botón de cerrar sesión*/
+.boton{
+    border: none;
+    font-size: 50%;
+    background-color:#2F495B;
+}
+
+.boton:hover{
+    background-color:var(--azul-2);
+}
+
+/* contenedor de las filas */
+#nabvarrr{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.botones .btn{
+    background-color: #2F495B;
+    border-radius: 5px;
+} 
+
+.botones a{
+    text-decoration: none;
+    color: white;
+}
+
+.botones .dropdown-menu .dropdown-item{
+    color: black;
+}
+
+nav{
+    height: 200px;
+    padding-top: 7px;
+}
+
+/* pone el titulo "documentacion" en blanco y lo centra */
+.document{
+    text-align: center;
+}
+
+/* hasta acá va la barra de navegación */
+/* --------------------------------------------------------------- */
+
+/* para centrar y ponerle margen al texto */
+.section{
+    margin: 20px 10% 0px 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 869px){
+    /* para que la imagen de las montañas se adecue cuando la pantalla está en menos de 869px  */
+    .contenedor{
+        height: 207px;
+    }
+}
+
+/* ----------------------------------------------------------------- */
+
+
+html {
+    /*font-size: 62.5%;*/
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+}
+
+h1, h2{
+    color: var(--gris-oscuro);
+    margin-top: 1rem;
+}
+
+section{
+    margin-top: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    width: 60%;
+    max-width: 100rem;
+    margin: 0 auto;
+}*/
+
+main h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+label {
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+input, select {
+    margin: 0.2rem 0;
+}
+
+.sinpadding [class*="col-"] {
+    padding: 0 0.2rem;
+}
+
+.button {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.button > #regresar{
+    margin-bottom: 1rem;
+}
+
+input[type=checkbox]:checked{
+    background-color: var(--azul-2);
+    border: var(--azul);
+}

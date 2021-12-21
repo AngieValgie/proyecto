@@ -1,0 +1,193 @@
+:root {
+    --gris-claro: #eeeeee;
+    --gris-oscuro: #3b4042;
+    --blanco: #FFFFFF;
+    --negro: #111111;
+    --azul: #2F495B;
+    --azul-2: #35566d;
+    --azul-claro: #C8D3D5;
+    --azul-cielo: #0B5ED8;
+}
+
+.contenedor{
+    background-size: cover;
+    background-position: 0px 30%;
+    background-repeat: no-repeat;
+    background-image: url("../img/imgg.jpg");
+    height: 165px;
+}
+
+/* achiqué el logo, le quité el borde, le puse margenes arriba y abajo  */
+.logo{
+    width: 180px;
+    border: none;
+    margin-left: 10%;
+}
+
+/* contenedro del boton de cerrar sesión*/
+.contboton{
+    margin-top: 20px;
+    margin-right: 10%;
+}
+
+/* cambié el color y le quité el borde al botón de cerrar sesión*/
+.boton{
+    border: none;
+    font-size: 50%;
+    background-color:#2F495B;
+}
+
+.boton:hover{
+    background-color:var(--azul-2);
+}
+
+/* contenedor de las filas */
+#nabvarrr{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.botones .btn{
+    background-color: #2F495B;
+    border-radius: 5px;
+} 
+
+.botones a{
+    text-decoration: none;
+    color: white;
+}
+
+.botones .dropdown-menu .dropdown-item{
+    color: black;
+}
+
+nav{
+    height: 200px;
+    padding-top: 7px;
+}
+
+/* pone el titulo "documentacion" en blanco y lo centra */
+.document{
+    text-align: center;
+}
+
+/* hasta acá va la barra de navegación */
+/* --------------------------------------------------------------- */
+
+/* para centrar y ponerle margen al texto */
+.section{
+    margin: 20px 10% 0px 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 869px){
+    /* para que la imagen de las montañas se adecue cuando la pantalla está en menos de 869px  */
+    .contenedor{
+        height: 207px;
+    }
+}
+
+/* ----------------------------------------------------------------- */
+
+
+html {
+    /*font-size: 62.5%;*/
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+}
+
+h1, h2{
+
+    color: var(--gris-oscuro);
+    margin-top: 1rem;
+}
+
+section{
+    margin-top: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    width: 70%;
+    max-width: 120rem;
+    margin: 0 auto;
+}*/
+
+main h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.acta-tipo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    column-gap: 0.5rem;
+}
+
+.form-control {
+    margin-top: 0.5rem;
+}
+
+.acta-label, .form-label{
+    font-size: 1rem;
+}
+
+.archivos-acta {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 1rem;
+}
+
+@media (min-width: 785px) {
+    .archivos-acta {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1rem;
+    } 
+}
+
+.acta-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button1 {
+    margin: 2rem;
+    display: block;
+}
+
+.button1 button {
+    margin-top: 1rem;
+}
+
+.boton-guardar{
+    padding: .3rem 6.5rem .3rem 6.5rem;
+    background-color: var(--azul);
+    border: var(--azul);
+}
+
+.boton-otro {
+    background-color: var(--azul);
+    border: var(--azul);
+}
+
+.boton-guardar:hover{
+    background-color: var(--azul-2);
+}
+
+.boton-otro:hover{
+    background-color: var(--azul-2);
+}

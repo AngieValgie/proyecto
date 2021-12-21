@@ -1,0 +1,140 @@
+.contenedor{
+    background-size: cover;
+    background-position: 0px 30%;
+    background-repeat: no-repeat;
+    background-image: url("../img/imgg.jpg");
+    height: 160px;
+}
+
+/* achiqué el logo, le quité el borde, le puse margenes arriba y abajo  */
+.logo{
+    width: 180px;
+    border: none;
+    margin-left: 10%;
+}
+
+/* contenedro del boton */
+.contboton{
+    margin-top: 20px;
+    margin-right: 10%;
+}
+
+/* cambié el color y le quité el borde al botón de cerrar sección*/
+.boton{
+    border: none;
+    font-size: 80%;
+    background-color:#2F495B;
+}
+
+/* .cont{ /MAYBE BORRAR
+   border-radius: 5px; 
+} */
+
+/* contenedor de las filas */
+#nabvarrr{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.botones .btn{
+    background-color: #2F495B;
+} 
+
+.botones a{
+    color: white;
+    text-decoration: none;
+}
+
+/* .botones{ /MAYBE BORRAR
+    display: flex;
+    justify-content: space-around;
+} */
+
+.botones .dropdown-menu .dropdown-item{
+    color: black;
+}
+
+nav{
+    height: 200px;
+    padding-top: 7px;
+}
+
+/* pone el titulo "documentacion" en blanco y lo centra */
+.document{
+    text-align: center;
+}
+
+/* hasta acá va la barra de navegación */
+/* --------------------------------------------------------------- */
+
+/* para centrar y ponerle margen al texto */
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 10% 0px 10%;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+
+@media (max-width: 869px){
+    /* para que la imagen de las montañas se adecue cuando la pantalla está en menos de 869px  */
+    .contenedor{
+     height: 197px;
+    }
+}
+
+/* para cuadrar la imagen de la carpeta negra */
+.imgcarpeta{
+    width: 70px;
+    margin-left: 10px;
+}
+
+.card-body .btn{
+    background-color: #334752;
+}
+
+.card{
+    border: none;
+}
+
+/* ------------------------------------------- */
+/* empieza el aside */
+
+.aside{
+    width: 25%;
+    /* background-color: cadetblue; */
+    float: right;
+    position: relative;
+    margin-top: -290px;
+    margin-right: 50px;
+}
+
+.boton-guardar{
+    margin-bottom: 0.5rem;
+    /*margin-left: 88.2rem;*/
+}
+
+#boton-guardar{
+    background-color: var(--azul);
+    color: white;
+    border: var(--azul);
+    font-size: 0.9rem;
+}
+
+#boton-guardar:hover{
+    background-color: var(--azul-2);
+    color: white;
+}
+
+@media (max-width: 900px){
+    /* para que la imagen de los cables se adecue cuando la pantalla está en menos de 869px  */
+    .aside{
+        width: 27%;
+        /* background-color: cadetblue; */
+        float: right;
+        position: relative;
+        margin-top: 1000px;
+    }
+}

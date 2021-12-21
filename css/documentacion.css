@@ -1,0 +1,98 @@
+.contenedor{
+    background-size: cover;
+    background-position: 0px 30%;
+    background-repeat: no-repeat;
+    background-image: url("../img/imgg.jpg");
+    height: 160px;
+}
+
+/* achiqué el logo, le quité el borde, le puse margenes arriba y abajo  */
+.logo{
+    width: 180px;
+    border: none;
+    margin-left: 10%;
+}
+
+/* contenedro del boton */
+.contboton{
+    margin-top: 20px;
+    margin-right: 10%;
+}
+
+/* cambié el color y le quité el borde al botón de cerrar sección*/
+.boton{
+    border: none;
+    font-size: 80%;
+    background-color:#2F495B;
+}
+
+/* .cont{ /MAYBE BORRAR
+   border-radius: 5px; 
+} */
+
+/* contenedor de las filas */
+#nabvarrr{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.botones .btn{
+    background-color: #2F495B;
+} 
+
+.botones a{
+    text-decoration: none;
+    color: white;
+}
+
+/* .botones{ /MAYBE BORRAR
+    display: flex;
+    justify-content: space-around;
+} */
+
+.botones .dropdown-menu .dropdown-item{
+    color: black;
+}
+
+nav{
+    height: 200px;
+    padding-top: 7px;
+}
+
+/* pone el titulo "documentacion" en blanco y lo centra */
+.document{
+    text-align: center;
+}
+
+/* hasta acá va la barra de navegación */
+/* --------------------------------------------------------------- */
+
+/* para centrar y ponerle margen al texto */
+.section{
+    margin: 20px 10% 0px 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 869px){
+    /* para que la imagen de las montañas se adecue cuando la pantalla está en menos de 869px  */
+    .contenedor{
+        height: 197px;
+    }
+}
+
+/* para cuadrar la imagen de la carpeta negra */
+.imgcarpeta{
+    width: 70px;
+    margin-left: 10px;
+}
+
+.card-body .btn{
+    background-color: #334752;
+}
+
+.card{
+    border: none;
+}
